@@ -1,3 +1,5 @@
+sudo apt update
+
 # Stuff
 sudo apt -y install unzip
 sudo apt -y install build-essential
@@ -27,7 +29,17 @@ chmod +x /tmp/win32yank.exe
 sudo mv /tmp/win32yank.exe /usr/local/bin/
 
 
+# Symlinks
+ln -sTf $PWD/tmux.conf $HOME/.tmux.conf
+
+# bash conf
+ln -sTf $PWD/bash_aliases $HOME/.bash_aliases
+# TODO: update bashrc
+# ln -sTf $PWD/bashrc $HOME/.bashrc
+
+
+
 # TODO: 
 # Go
 # python 
-# ??? fzf and stuff
+# move code folder to repos
